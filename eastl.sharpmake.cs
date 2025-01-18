@@ -22,5 +22,7 @@ public class EASTLProject : BaseCppProject
         conf.TargetPath = @"[project.SharpmakeCsPath]\out\bin\[target.Platform]-[target.Optimization]";
         conf.IntermediatePath = @"[project.SharpmakeCsPath]\out\intermediate\[target.Platform]-[target.Optimization]";
         conf.IncludePaths.Add(@"[project.SharpmakeCsPath]\include");
+
+        conf.AddPublicDependency<EABaseProject>(target);
     }
 }

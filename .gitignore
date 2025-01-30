@@ -50,4 +50,8 @@ BUCKAROO_DEPS
 .vscode/settings.json
 
 # Hedron
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
 out/
+x64/

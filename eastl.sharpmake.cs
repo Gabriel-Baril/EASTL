@@ -2,11 +2,11 @@ using System.IO; // For Path.Combine
 using Sharpmake; // Contains the entire Sharpmake object library.
 
 [Generate]
-public class EASTLProject : BaseCppProject
+public class HdnCodeExternalEASTLProject : BaseCppProject
 {
-    public EASTLProject()
+    public HdnCodeExternalEASTLProject()
     {
-        Name = "eastl";
+        Name = "hdn.code.external.eastl";
         SourceRootPath = @"[project.SharpmakeCsPath]\source";
         AddTargets(TargetUtil.DefaultTarget);
     }
@@ -23,6 +23,6 @@ public class EASTLProject : BaseCppProject
         conf.IntermediatePath = @"[project.SharpmakeCsPath]\out\intermediate\[target.Platform]-[target.Optimization]";
         conf.IncludePaths.Add(@"[project.SharpmakeCsPath]\include");
 
-        conf.AddPublicDependency<EABaseProject>(target);
+        conf.AddPublicDependency<HdnCodeExternalEABaseProject>(target);
     }
 }

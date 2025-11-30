@@ -6,7 +6,7 @@ public class HdnCodeExternalEASTLProject : BaseCppProject
 {
     public HdnCodeExternalEASTLProject()
     {
-        Name = "hdn.code.external.eastl";
+        Name = "dm.code.external.eastl";
         SourceRootPath = @"[project.SharpmakeCsPath]\source";
         AddTargets(TargetUtil.DefaultTarget);
     }

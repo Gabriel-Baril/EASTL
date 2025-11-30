@@ -49,7 +49,7 @@ Testing/*
 BUCKAROO_DEPS
 .vscode/settings.json
 
-# Hedron
+# Dream
 *.vcxproj
 *.vcxproj.user
 *.vcxproj.filters
